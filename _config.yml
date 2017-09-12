@@ -1,3 +1,3 @@
 markdown: redcarpet
-baseurl: /www.elliotlunn.co.uk
+baseurl: "/"
 exclude: [README.md]
