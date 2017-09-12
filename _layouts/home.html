@@ -8,19 +8,22 @@
             <meta name="viewport" content="width=device-width, inital-scale=1.0"/>
             <meta name="author" content="Elliot Lunn">
             <link rel="stylesheet" type="text/css" href="css/reset.css">
-            <link rel="stylesheet" type="text/css" href="css/styles.css">
+            <link rel="stylesheet" type="text/css" href="css/home.css">
             <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Roboto:700" rel="stylesheet">
         </head>
         
         <body>
+        <div class="content">
             
-            <header>
-{% include nav.html %}
-            </header>
-            
- {{content}}
-            
-             <footer>
+{{content}}
+            <nav>
+                <ul>
+                    <li class="port"><a href="https://www.behance.net/elunn" target="_blank">Portfolio</a></li><hr>
+                    <li  class="con"><a href="{{site.baseurl}}/contact.html">Contact</a></li><hr>
+                    <li class="ab"><a href="{{site.baseurl}}/about.html">About</a></li>
+                </ul>
+            </nav> 
+       <footer>
             <div class="socialicon">
                 <a href="https://www.instagram.com/elliotlunn/" target="_blank">   
                     <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
@@ -44,7 +47,6 @@
                 </a>
             </div>
         </footer>
+        </div>
         </body>
-        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="menu.js"></script>
     </html>
