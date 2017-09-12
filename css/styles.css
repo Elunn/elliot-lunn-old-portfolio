@@ -30,7 +30,6 @@ a:hover {
 
 body {
     width: 43rem;
-    height: 100vh;
     position: absolute;
     left: 50%;
     margin: 0 0 0 -21.5em;
@@ -40,7 +39,6 @@ body {
 /*nav bar*/
 
 nav ul .nav{
-    position: absolute;
     font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: space-between;
@@ -120,7 +118,7 @@ footer .socialicon svg:hover {
 }
 
 
-@media(max-width: 800px){  
+@media(max-width: 690px){  
     body {
         position: absolute;
         width: 100vw;
