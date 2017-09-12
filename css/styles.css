@@ -131,7 +131,7 @@ footer .socialicon svg:hover {
     }
     
     #menu-icon {
-        background: url(/svg/menu-icon.svg) no-repeat;
+/*        background: url({{site.baseurl}}svg/menu-icon.svg) no-repeat;*/
         display: block;
         position: relative;
         float: right;
@@ -141,6 +141,14 @@ footer .socialicon svg:hover {
         z-index: 100;
         cursor:pointer;
     }
+    
+#menu-icon .cls-1 {
+        fill: none;
+        stroke: #b3b3b3;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+}
     
     nav ul .nav{
         position: absolute;
