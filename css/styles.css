@@ -30,6 +30,7 @@ a:hover {
 
 body {
     width: 43rem;
+    height: 100%;
     position: absolute;
     left: 50%;
     margin: 0 0 0 -21.5em;
@@ -131,7 +132,6 @@ footer .socialicon svg:hover {
     }
     
     #menu-icon {
-/*        background: url({{site.baseurl}}svg/menu-icon.svg) no-repeat;*/
         display: block;
         position: relative;
         float: right;
@@ -151,16 +151,21 @@ footer .socialicon svg:hover {
 }
     
     nav ul .nav{
+        width: 100vw;
+        background: rgba(255, 255, 255, .9);
         position: absolute;
         flex-direction: column;
-        margin: 2em .5em;
+        margin: 2em 0;
     }
+    
+    nav ul .nav li,nav ul .nav hr {
+        margin: 0 1.5em
+}
 
     nav ul {
         display: none;
         position: relative;
         height: 300px;
-        background: rgba(255, 255, 255, .9);
         z-index: 90;
     }   
     
