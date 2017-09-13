@@ -26,11 +26,15 @@ a:hover {
     transition: all 0.01ms ease-in-out;
 }
 
+#container {
+    min-height: 100%;
+    position: relative;
+}
+
 /*main content*/
 
 body {
     width: 43rem;
-    height: 100%;
     position: absolute;
     left: 50%;
     margin: 0 0 0 -21.5em;
@@ -39,11 +43,16 @@ body {
 
 /*nav bar*/
 
+nav {
+    position: relative;
+    top: 3vh;
+    margin-bottom: 5vh;
+}
+
 nav ul .nav{
     font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: space-between;
-    margin: 1em 0;
     font-size: 1.4em;
 }
 
@@ -77,10 +86,6 @@ nav a {
      
 }
 
-.contact br.two {
-        display: none;
-}
-
 .contact a {
     color: #41f2af;
 }
@@ -94,7 +99,7 @@ nav a {
 footer {
     width: 100%;
     position: absolute;
-    bottom: 3vh;
+    bottom: 2vh;
     
 }
 
@@ -132,40 +137,48 @@ footer .socialicon svg:hover {
     }
     
     #menu-icon {
-        display: block;
+        display: inline-block;
         position: relative;
         float: right;
-        width: 2.2em;
-        height: 2.2em;
+        width: 100%;
         margin: 1em;
         z-index: 100;
         cursor:pointer;
     }
     
-#menu-icon .cls-1 {
+    #menu-icon svg {
+        width: 2.2em;
+        float: right;
+    }
+    
+    #menu-icon .cls-1 {
         fill: none;
         stroke: #b3b3b3;
         stroke-linecap: round;
         stroke-miterlimit: 10;
         stroke-width: 3px;
-}
+    }
+
+    nav {
+        top:0;
+        margin: 0;
+    }
     
     nav ul .nav{
-        width: 100vw;
+        width: 100%;
         background: rgba(255, 255, 255, .9);
         position: absolute;
         flex-direction: column;
-        margin: 2em 0;
+        margin: 0;
     }
     
     nav ul .nav li,nav ul .nav hr {
         margin: 0 1.5em
-}
+    }
 
     nav ul {
         display: none;
         position: relative;
-        height: 300px;
         z-index: 90;
     }   
     
@@ -177,10 +190,6 @@ footer .socialicon svg:hover {
         nav li {
         padding: 1.5em 0;
         font-size: 1.2em;
-    }
-    
-    nav .port {
-        padding-top: 0
     }
     
     nav hr {
@@ -196,27 +205,26 @@ footer .socialicon svg:hover {
     
     footer .socialicon { 
         justify-content: space-between;
+        margin: 0 1.5em;
     }
     
     footer .socialicon svg {
-        margin: 0 1.5em;
+        margin: 0;
         width: 3em;
     }
 }
 
-@media(max-width: 410px){
-    .contact br.two {
-        display: inline-block;
-    }
-    
-    .contact br.one {
+@media(max-width: 480px){
+    .contact br {
         display: none;
     }
     .contact { 
         position: absolute;
-        left: 50%;
+        text-align: center;
         padding: 0;
-        margin: 0 0 0 -5.8em;
+        left: 0;
+        margin: 0;
+        font-size: 1.5em;
     }
 }
 
