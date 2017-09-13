@@ -14,6 +14,7 @@
 a {
     color: rgb(179, 179, 179);
     text-decoration: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 a:visited {
@@ -23,10 +24,6 @@ a:visited {
 a:hover {
     color: rgb(0, 0, 0);
     transition: all 0.01ms ease-in-out;
-}
-
-* {
-    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 /*Main Content*/
