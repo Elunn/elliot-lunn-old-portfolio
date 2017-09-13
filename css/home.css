@@ -147,7 +147,7 @@ footer .socialicon svg:hover {
 
 @media(max-width: 320px) {
     .content {
-        width: 24rem;
+        width: 23rem;
         position: absolute;
         top: 4em;
         left: 50%;
