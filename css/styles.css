@@ -33,13 +33,17 @@ a:hover {
     position: relative;
 }
 
+.abouttext {
+    position: relative;
+    width: 60%;
+    top:20%;
+}
+
 p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.4em;
     text-align: distribute;
-    padding-top: 10vh;
     color: #333333;
-    width: 80%;
 }
 
 /*main content*/
