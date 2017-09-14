@@ -35,6 +35,10 @@ a:hover {
 
 p {
     font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    text-align: justify;
+    padding-top: 3vh;
+    color: #333333;
 }
 
 /*main content*/
