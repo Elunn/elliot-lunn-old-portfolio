@@ -2,6 +2,11 @@
 
 /*Global*/
 
+#container {
+    min-height: 100%;
+    position: relative;
+}
+
 * {
     transition: all 300ms ease-in-out;
 }
@@ -28,12 +33,19 @@ a:hover {
 
 /*Main Content*/
 
-.content {
+body {
+    position: absolute;
     width: 28rem;
+    height: 100%;
+    left: 50%;
+    margin: 0 0 0 -14em;
+}
+
+.content {
+    width: 100%;
     position: absolute;
     top: 50%;
-    left: 50%;
-    margin: -10.25em 0 0 -14em;
+    margin: -10.25em 0 0 0;
     
 }
 
@@ -58,24 +70,26 @@ nav hr {
 
 /*footer*/
 
-footer .socialicon {
-    display: inline-block;
+footer {
+    width: 100%;
     position: absolute;
-    right: -6.25em;
-    bottom: -6em;
+    bottom: 2vh;
+    right: -6vw;
+}
+
+footer .socialicon {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 footer .socialicon svg{
     width: 2.5em;
+    fill: rgb(204, 204, 204);
+    padding: 0 0 0 1.25em;
 }
 
 footer .cls-1 { 
     fill: white;
-}
-
-footer svg {
-    fill: rgb(204, 204, 204);
-    padding: 0 0 0 1.25em;
 }
 
 footer .socialicon svg:hover {
@@ -83,20 +97,32 @@ footer .socialicon svg:hover {
     transition: all 0.01ms ease-in-out;
 }
 
-@media(max-width: 800px) {
+@media(max-width: 740px) {
     :root {
         font-size: 16px;
     }
 }
 
 @media(max-width: 640px) {
+    body {
+        width: 100%;
+        left: 0;
+        margin: 0;
+    }
+    
     .content {
-        width: 38rem;
-        position: absolute;
-        top: 3em;
-        left: 50%;
-        margin: 0 0 0 -19em;
+        position: relative;
+        margin: 1em 0 0 1.5em;
     }  
+    
+    .welcome {
+        width: 90%;
+        margin: 1em auto 0 auto;;
+    }
+    
+    nav {
+        padding-bottom: 40px;
+    }
     
     nav ul{
         display: flex; 
@@ -106,7 +132,7 @@ footer .socialicon svg:hover {
     }
     
     nav li {
-        padding: 1.5em 0;
+        padding: 1em 0;
         font-size: 1.2em;
     }
     
@@ -121,40 +147,24 @@ footer .socialicon svg:hover {
         background-color: #41f2af; 
     }
     
-    footer .socialicon {
-        position: relative;
-        right: 0;
-        bottom: 0;
+    footer {
+        left: 0;
+    }
+    
+    footer .socialicon { 
+        justify-content: space-between;
+        padding: 0 2em
     }
     
     footer .socialicon svg {
-        width: 4em;
-        padding: 0 3em 0 0;
+        margin: 0;
+        padding: 0;
+        width: 3em;
     }
+}
     
 }
 
-@media(max-width: 460px){
-    :root {
-        font-size: 10px;
-    }
-}
-
-@media(max-width: 460px){
-    :root {
-        font-size: 10px;
-    }
-}
-
-@media(max-width: 320px) {
-    .content {
-        width: 24rem;
-        position: absolute;
-        top: 4em;
-        left: 50%;
-        margin: 0 0 0 -12em;
-    
-}
     
     
 
