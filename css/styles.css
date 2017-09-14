@@ -34,7 +34,7 @@ a:hover {
 }
 
 .abouttext {
-    position: relative;
+    position: absolute;
     width: 60%;
     top:20%;
 }
@@ -166,7 +166,7 @@ footer .socialicon svg:hover {
     }
     
     #menu-icon svg {
-        width: 2.2em;
+        width: 2.5em;
         float: right;
     }
     
