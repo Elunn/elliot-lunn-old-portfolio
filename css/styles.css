@@ -121,7 +121,7 @@ nav .current {
 
 .port-content {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 14.21em;
     margin: 0 0 5em 0;
 }
