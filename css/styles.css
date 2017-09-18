@@ -266,6 +266,10 @@ footer .socialicon svg:hover {
         background-color: #41f2af; 
     }
     
+    .project-name {
+    left: 5%;
+    }
+    
     #port-content {
     padding: 2.2em 0 2.2em 2em;
     }
