@@ -271,7 +271,11 @@ footer .socialicon svg:hover {
     }
     
     #port-content {
-    padding: 2.2em 0 2.2em 2em;
+    padding: 2.2em 0 2.2em 0;
+    }
+    
+    .port-content {
+        padding-left: 2em;
     }
     
     #top {
