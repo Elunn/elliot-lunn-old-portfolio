@@ -34,7 +34,8 @@ a:hover {
 }
 
 .abouttext {
-    position: absolute;
+    padding-bottom: 4.5em;
+    position: relative;
     width: 60%;
     top:20%;
 }
