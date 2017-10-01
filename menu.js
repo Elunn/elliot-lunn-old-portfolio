@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    $("#menu-icon").on("click", function(){
+    $("#menu-icon svg").on("click", function(){
         $("header nav ul").toggleClass("open");
         
     });

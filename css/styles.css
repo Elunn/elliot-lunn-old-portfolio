@@ -207,12 +207,12 @@ footer .socialicon svg:hover {
         width: 100%;
         margin: 1em;
         z-index: 100;
-        cursor:pointer;
     }
     
     #menu-icon svg {
         width: 2.5em;
         float: right;
+        cursor:pointer;
     }
     
     #menu-icon .cls-1 {
