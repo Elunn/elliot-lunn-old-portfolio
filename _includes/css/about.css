@@ -15,7 +15,7 @@
     position: relative;
 }
 
-.about .colourblock h1{
+.about .colourblock h2{
     text-transform: uppercase;
     position: absolute;
     z-index: 90;
@@ -34,7 +34,7 @@
 
 /* For devices larger than 400px */
 @media (min-width: 400px) {
-    .about .colourblock h1 {
+    .about .colourblock h2 {
         padding: 0;
     }
     
