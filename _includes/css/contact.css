@@ -39,6 +39,7 @@ form {
     display: flex;
     flex-direction: column;
     max-width: 30em;
+    padding: 0 1em 1em 1em;
 }
 
 input[type=email] {
@@ -84,4 +85,11 @@ button[type=submit]{
 button[type=submit]:hover {
     background-color: #41F2Af;
     color: white;
+}
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+    form {
+        padding: 0 0 1em 0;
+    }
 }
