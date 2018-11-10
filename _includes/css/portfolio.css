@@ -129,62 +129,62 @@
 /*Portfolio Thumbnails*/
 
 .pic_1 {
-    background-image: url({{site.baseurl}}/assets/FORMiT.jpg);
+    background-image: url({{site.baseurl}}/assets/images/FORMiT.jpg);
     background-size: cover;
 }
 
 .pic_2 {
-    background-image: url({{site.baseurl}}/assets/EdenShade.png);
+    background-image: url({{site.baseurl}}/assets/images/EdenShade.png);
     background-size: cover;
 }
 
 .pic_3 {
-    background-image: url({{site.baseurl}}/assets/Kellys.jpg);
+    background-image: url({{site.baseurl}}/assets/images/Kellys.jpg);
     background-size: cover;
 }
 
 .pic_4 {
-    background-image: url({{site.baseurl}}/assets/InclusiveBottle.png);
+    background-image: url({{site.baseurl}}/assets/images/InclusiveBottle.png);
     background-size: cover;
 }
 
 .pic_5 {
-    background-image: url({{site.baseurl}}/assets/Lodj.png);
+    background-image: url({{site.baseurl}}/assets/images/Lodj.png);
     background-size: cover;
 }
 
 .pic_6 {
-    background-image: url({{site.baseurl}}/assets/StepMaster.gif);
+    background-image: url({{site.baseurl}}/assets/images/StepMaster.gif);
     background-size: cover;
 }
 
 .pic_7 {
-    background-image: url({{site.baseurl}}/assets/37674015_10155708389443549_7883064308874084352_n.jpg);
+    background-image: url({{site.baseurl}}/assets/images/37674015_10155708389443549_7883064308874084352_n.jpg);
     background-size: cover;
 }
 
 .pic_8 {
-    background-image: url({{site.baseurl}}/assets/Website-mockup.gif);
+    background-image: url({{site.baseurl}}/assets/images/Website-mockup.gif);
     background-size: cover;
 }
 
 .pic_9 {
-    background-image: url({{site.baseurl}}/assets/NewDesigners.jpg);
+    background-image: url({{site.baseurl}}/assets/images/NewDesigners.jpg);
     background-size: cover;
 }
 
 .pic_10 {
-    background-image: url({{site.baseurl}}/assets/24839027_715157612009490_3468158947326689280_n.jpg);
+    background-image: url({{site.baseurl}}/assets/images/24839027_715157612009490_3468158947326689280_n.jpg);
     background-size: cover;
 }
 
 .pic_11 {
-    background-image: url({{site.baseurl}}/assets/WindDrawer.jpg);
+    background-image: url({{site.baseurl}}/assets/images/WindDrawer.jpg);
     background-size: cover;
 }
 
 .pic_12 {
-    background-image: url({{site.baseurl}}/assets/Bowl.gif);
+    background-image: url({{site.baseurl}}/assets/images/Bowl.gif);
     background-size: cover;
 }
 
