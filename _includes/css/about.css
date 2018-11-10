@@ -1,60 +1,50 @@
-/*---profile banner---*/
-
-.about .colourblock {
-    position: relative;
-    height: 8em;
-    top: -8em;
-}
-
-.about .yellowbanner {
-    background-color: #EAC435;
+img {
     width: 100%;
-    height: 8em;
-    margin: 3em 0 0 -500%;
-    padding: 0 0 0 500%;
+    padding-top: 0;
+    padding-bottom: 1em;
+}
+
+.aboutText {
+    width: 90%;
+    float: left;
+    padding-bottom: 2em;
+}
+
+.aboutText p {
+    line-height: 1.8em;
+    padding-bottom: 1em;
+}
+
+.pdf {
+    width: 2em;
+    float: left;
+}
+
+#pdf {
     position: relative;
+    float: left;
+    text-decoration: none;
+    width: 3em;
+    color: grey;
 }
 
-.about .colourblock h2{
-    text-transform: uppercase;
+.pdfText {
     position: absolute;
-    z-index: 90;
-    color: white;
     top: 50%;
-    transform: translate( 0, -50%);
-    padding-left: 1em;
+    left: 2.5em;
+    transform: translate(0, -50%);
+    white-space: nowrap;
 }
 
-.about .colourblock img{
-    position: absolute;
-    right: 0;
-    top: -2em;
-    width: 18em;
-}
-
-/* For devices larger than 400px */
-@media (min-width: 400px) {
-    .about .colourblock h2 {
-        padding: 0;
+@media (min-width: 650px) {
+    img {
+        float: right;
+        width: 45%;
     }
     
-    .about .colourblock img {
-        left: 50%;
-        transform: translate( -50%, 0);
-        top: -2em;
-        width: 20em;
-    }
-    
+    .aboutText {
+    width: 50%;
+    float: left;
+}
 }
 
-/*---Profile text---*/
-
-.info {
-    margin-top: 3em;
-    text-align: center;
-    padding-bottom: 3em;
-}
-
-.info p {
-    padding: .5em;
-}

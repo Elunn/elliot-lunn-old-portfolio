@@ -1,4 +1,4 @@
-/*---layout---*/
+/*Global Styling*/
 
 :root {
     font-size: 16px;
@@ -6,223 +6,154 @@
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 0; 
 }
 
 html, body {
+    font-family: 'Open Sans', sans-serif;
     height: 100%;
-    background-color: #F9F9F9;
 }
 
-.container {
-    width: 100%;
-    margin: 0 auto;
-}
-
-#container {
+#container  {
     min-height: 100%;
 }
 
+@media (max-width: 650px) {
+    #conContain > :not(.home){
+        width: 90%;
+        margin-left: 10%;
+    }
+}
+
 #main {
-    padding-bottom: 13em;
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow: auto;
+    padding-bottom: 10vh;
 }
 
-.content {
-    padding-top: 5.3em;
-}
-
-a:hover {
-    color: #41F2AF;
-}
-
-.current {
-    color: #41F2AF;
-}
-
-/* For devices larger than 400px */
-@media (min-width: 400px) {
-  .container {
-    width: 80%;
-    padding: 0; 
-    }
-}
-
-/* For devices larger than 550px */
-@media (min-width: 550px) {
-    .container {
-        width: 70%;
-    }
-    
-    #main {
-        padding-bottom: 5em;
-    }
-}
-
-/*---fonts---*/
-
-p {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.5em;
-}
-
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-}
-
-h1 {
-    font-family: 'Montserrat', sans-serif;;
-    font-weight: 900;
-}
-
-/*---Header---*/
-header {
-    background-color: white;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    position: fixed;
-    z-index: 100;
-}
-
-.logo {
-    padding: 1.5em 0 1.5em 1em;
-}
-
-.logo h1{
-    font-size: 1.5em;
-    padding: 0;
-    margin: 0;
-    line-height: 1.5em;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-}
-
-.logo a {
-    text-decoration: none;
-    color: black;
-}
-
-.logo a:hover {
-    color: #41F2AF;
-}
-
-.burger {
+footer {
+    position: relative;
+    height: 10vh;
+    margin-top: -10vh;
+    clear: both;
+    width: 90%;
     float: right;
-    padding-right: 1em;
+    z-index: 1;
 }
 
-/* For devices larger than 400px */
-@media (min-width: 400px) {
-    .logo {
-        padding: 1.5em 0;
+
+/* For devices larger than 650px */
+
+@media (min-width: 650px) {
+    #conContain {
+    width: 80%;
+    margin: 0 auto 0 auto;
+    margin-top: 10vh;
     }
-    
-    .burger {
-        padding: 0;
-        cursor: pointer;
+    footer {
+    width: 80%;
+    margin: auto;
+    margin-top: -10vh;
+    float: inherit;
     }
 }
 
-/*---Nav---*/
+/*Nav*/
 
-nav ul {
-    margin-top: -1.5em;
-    display: none;
+.logo svg {
+    height: 1em;
+}
+
+.logo svg:hover {
+    fill: #71F5C5;
+}
+
+nav {
+    width: 12em;
+}
+
+nav ul{
     list-style: none;
-    padding-left: 1em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-nav ul.open {
-    display: block;
-}
-
-nav li{
-    padding: .625em 0;
+nav li {
+    padding: .5em 0;
 }
 
 nav a {
     text-decoration: none;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.125em;
-} 
+    color: gray;
+}
 
-/* For devices larger than 400px */
-@media (min-width: 400px) {
+nav a:hover {
+    color: #71F5C5;
+}
+
+header {
+    padding-top: 9vh;
+}
+
+/* For devices larger than 650px */
+
+@media (min-width: 650px) {
+    header {
+        float: left;
+        padding-top: 0;
+        position: fixed;
+    }
+    
     nav ul {
-        padding: 0;
+        flex-direction: column;
     }
 }
 
-/*---footer---*/
+/*Footer*/
 
-footer {
-    width: 100%;
-    background-color: #3B3B3B;
-    position: relative;
-    height: 13em;
-    margin-top: -13em;
-    clear: both;
+footer a {
+    margin-right: 2em;
 }
 
-.footerContent {
-    padding-top: 0.625em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+footer svg{
+    height: 1.8em;
+    fill: rgba(0, 0, 0, .1);
 }
 
-.profileLinks {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    padding-left: 1em;
+footer svg:hover {
+    fill: #71F5C5;
 }
 
-.profileLinks svg {
-    width: 2em;
-    fill: white;
-}
-
-.profileLinks svg:hover {
-    fill:   #41F2AF;
-}
-
-footer p {
-    line-height: 1.25;
-    color: white;
-    padding: 0.3125em 0 0.3125em 1em;
-}
-
-footer a{
-    text-decoration: none; 
-    color: #1492E6;
-}
-
-/* For devices larger than 550px */
-@media (min-width: 550px) {
-    
-    footer {
-        height: 5em;
-        margin-top: -5em;
-    }
-    
-    .footerContent {
-        padding-top: 0.625em;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
+@media (min-width: 650px) {
     .profileLinks {
-        width: 10em;
-        padding: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-end;
+        float: right;
+    }
+    
+    footer a {
+    margin: 0 0 0 2em;
+    }
+}
+
+/*Page content container*/
+
+.pageContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 1em;
+}
+
+@media (min-width: 650px) {
+    .pageContent {
+        float: right;
+        width: 60%;
+    }
+}
+
+@media (min-width: 800px) {
+    .pageContent {
+        float: right;
+        width: 70%;
     }
 }

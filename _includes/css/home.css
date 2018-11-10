@@ -1,107 +1,79 @@
-
-/*---yellow about bar---*/
-
-.homeabout .colourblock {
+.home {
     position: relative;
-    height: 13.75em;
-    top: -13.75em;
-}
-
-.homeabout .yellowbanner {
-    background-color: #EAC435;
     width: 100%;
-    height: 13.75em;
-    margin: 3em 0 0 -500%;
-    padding: 0 0 0 500%;
+    height: 60vh;
+}
+
+#slideshow {
     position: relative;
+    height: 50vh;
+    float: right;
+    width: 90%;
 }
 
-.homeabout h2 {
+.imgOne {
     position: absolute;
-    z-index: 90;
-    color: white;
-    left: 0;
-    padding: 1em 2em 0 0.5em;
+    background-image: url({{site.baseurl}}/assets/images/received_980110645506848.jpeg);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
 }
 
-a h2:hover {
-    color: #41F2AF;
-}
-
-.homeabout img{
+.imgTwo {
     position: absolute;
+    background-image: url({{site.baseurl}}/assets/images/thumbnail.jpg);
+    width: 100%;
+    height: 100%;
+    background-position: bottom;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+.imgThree {
+    position: absolute;
+    background-image: url({{site.baseurl}}/assets/images/DSC_0219.jpg);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+.projectName {
+    line-height: 1.2em;
+    position: absolute;
+    color: rgba(0, 0, 0, .5);
+    bottom: -1.2em;
+}
+
+#design {
+    position: relative;
+    height: 100%;
+    width: 10%;
+    bottom: 0;
+}
+
+#designText {
+    position: absolute;
+    height: 15em;
+    bottom: 0;
     right: 0;
-    top: -2em;
-    width: 18em;
+    padding: 0 .3em;
 }
 
-/* For devices larger than 400px */
-@media (min-width: 400px) {
-    .homeabout h2 {
-        text-align: center;
-        top: 50%;
-        left: 50%;
-        transform: translate( -50%, 40%);
-        padding: 0;
+@media (min-width: 650px) {
+    .home {
+        float: right;
+        width: 75%;
+        height: 65vh;
     }
     
-    .homeabout img{
-        left: 50%;
-        transform: translate( -50%, 0);
-        width: 20em;
-    }
-
-}
-
-/*---blue portfolio bar---*/
-
-.homeport .colourblock {
-    position: relative;
-    height: 13.75em;
-    top: -13.75em;
-}
-
-.homeport .bluebanner {
-    background-color: #345995;
-    width: 100%;
-    height: 13.75em;
-    margin: 2em -500% 0 0;
-    padding: 0 500% 0 0;
-    position: relative;
-}
-
-.homeport h2 {
-    text-align: center;
-    position: absolute;
-    z-index: 90;
-    color: white;
-    top: 50%;
-    left: 50%;
-    transform: translate( -50%, -50%)
-}
-
-.light img{
-    position: absolute;
-    width: 17em;
-    top: -3em;
-    left: 50%;
-    transform: translate( -80%, 0)
-}
-
-.bottle img{
-    position: absolute;
-    width: 21em;
-    left: 50%;
-    top: 2em;
-}
-
-/* For devices larger than 550px */
-@media (min-width: 550px) {
-    .light img{
-        width: 18em;
-    }
-    
-    .bottle img{
-        width: 23em;
+    #slideshow {
+        height: 55vh;
     }
 }
