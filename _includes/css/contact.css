@@ -1,50 +1,37 @@
-img {
-    width: 100%;
-    padding-top: 0;
-    padding-bottom: 1em;
-}
-
-.aboutText {
+form {
+    display: flex;
+    flex-direction: column;
     width: 90%;
-    float: left;
-    padding-bottom: 2em;
+    padding-top: 2em;
 }
 
-.aboutText p {
-    line-height: 1.8em;
-    padding-bottom: 1em;
+input {
+    padding: .5em 1em;
+    margin: 1em 0;
+    border: 1px solid grey;
+    border-radius: .5em;
 }
 
-.pdf {
-    width: 2em;
-    float: left;
+textarea {
+    padding: 1em 0 3em 1em;
+    margin: 1em 0;
+    border: 1px solid grey;
+    border-radius: .5em;
 }
 
-#pdf {
-    position: relative;
-    float: left;
-    text-decoration: none;
-    width: 3em;
-    color: grey;
-}
-
-.pdfText {
-    position: absolute;
-    top: 50%;
-    left: 2.5em;
-    transform: translate(0, -50%);
-    white-space: nowrap;
+button {
+    width: 60%;
+    padding: .5em;
+    margin: 1em auto;
+    border: none;
+    border-radius: .5em;
+    background-color: #71F5C5;
+    color: white;
 }
 
 @media (min-width: 650px) {
-    img {
-        float: right;
-        width: 45%;
+    form {
+        width: 70%;
+        padding-top: 8em;
     }
-    
-    .aboutText {
-    width: 50%;
-    float: left;
 }
-}
-
