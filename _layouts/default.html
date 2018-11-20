@@ -42,6 +42,15 @@
                                 <li><a href="{{site.baseurl}}/contact/">Contact</a></li>
                             </ul>
                         </nav>
+                        <div class="categoryContainer noShow {% if page.url == '/portfolio.html' %}show{% endif %}">
+                            <div class="button"><h1>Sort &#8628;</h1></div>
+                            <ul>
+                                <li class="categoryItem" id="design">Design Projects</li>
+                                <li class="categoryItem" id="web">Web Work</li>
+                                <li class="categoryItem" id="short">Short &amp; fun</li>
+                                <li class="categoryItem" id="all">All</li>
+                            </ul>
+                        </div>
                     </header> 
                     {{content}}
                 </div>

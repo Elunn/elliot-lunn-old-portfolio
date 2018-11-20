@@ -5,6 +5,14 @@
 
 /*Portfolio DropDown List*/
 
+.noShow {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
 .categoryContainer {
     position: relative;
     list-style: none;
