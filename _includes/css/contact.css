@@ -35,3 +35,10 @@ button {
         padding-top: 8em;
     }
 }
+
+.contactText {
+    padding-top: 20vh;
+    width: 90%;
+    float: left;
+    padding-bottom: 2em;
+}
