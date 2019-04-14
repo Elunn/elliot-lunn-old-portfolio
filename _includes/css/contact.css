@@ -41,4 +41,5 @@ button {
     width: 90%;
     float: left;
     padding-bottom: 2em;
+    list-style: none;
 }
