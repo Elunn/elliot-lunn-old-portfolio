@@ -42,4 +42,5 @@ button {
     float: left;
     padding-bottom: 2em;
     list-style: none;
+    line-height: 26pt;
 }
